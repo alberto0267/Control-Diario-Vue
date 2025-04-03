@@ -1,18 +1,4 @@
-/* html,
-body,
-#app {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  background: linear-gradient(to bottom, #1c4a50, #2d7078);
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-} */
-
-.dashboard {
+/* .dashboard {
   display: flex;
   flex-direction: column;
 }
@@ -75,4 +61,4 @@ body,
 
 .dashboard-item:hover {
   transform: scale(1.05);
-}
+} */
