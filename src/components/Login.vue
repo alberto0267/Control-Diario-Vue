@@ -1,5 +1,6 @@
 <script setup>
 import logo from "../assets/logo3d.png";
+import "../styles/login.css";
 </script>
 
 <template>
@@ -28,8 +29,8 @@ import logo from "../assets/logo3d.png";
   </div>
 </template>
 
-<style scoped>
-.login-wrapper {
+<!-- <style scoped>
+/* .login-wrapper {
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -104,5 +105,5 @@ import logo from "../assets/logo3d.png";
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-}
-</style>
+} */
+</style> -->

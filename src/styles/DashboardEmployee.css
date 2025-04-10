@@ -1,4 +1,3 @@
-/* @import url("./headerFooter.css"); */
 .dashboard {
   min-height: 100vh;
   background: linear-gradient(to bottom, #004d5a, #00717d);
@@ -24,7 +23,8 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 69px;
-  padding: 92px 16px;
+  padding: 210px 16px;
+  align-items: center;
   justify-items: center;
 }
 

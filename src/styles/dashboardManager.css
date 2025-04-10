@@ -1,4 +1,3 @@
-/* @import url("./headerFooter.css"); */
 .dashboard {
   min-height: 100vh;
   background: linear-gradient(to bottom, #004d5a, #00717d);
@@ -21,13 +20,12 @@
 }
 
 .dashboard-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 69px;
-  padding: 92px 16px;
-  justify-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+  padding: 64px 16px;
 }
-
 .dashboard-item {
   display: flex;
   flex-direction: column;
@@ -62,4 +60,10 @@
   font-size: 0.85rem;
   text-align: center;
   font-weight: bold;
+}
+
+.dashboard-row {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
 }

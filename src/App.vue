@@ -1,15 +1,23 @@
 <script setup>
 import logo from "./assets/logo.png";
-
-import Login from "./components/Login.vue";
-
+// import Create from "./components/CreateAccount.vue";
+// import Login from "./components/Login.vue";
 // Esto es para maquetar nada mas, luego se le tiene que meter pinia y view router
-import DashboardAdmind from "./components/DashboardAdmin.vue";
+// import DashboardAdmind from "./components/DashboardAdmin.vue";
+// import DashboardManager from "./components/DashboardManager.vue";
+// import DashboardEmployee from "./components/DashboardEmployee.vue";
+// import Suggets from "./components/Suggets.vue";
+import Fichaje from "./components/Fichaje.vue";
 </script>
 
 <template>
+  <!-- <Create /> -->
   <!-- <Login /> -->
-  <DashboardAdmind />
+  <!-- <DashboardAdmind /> -->
+  <!-- <DashboardManager /> -->
+  <!-- <DashboardEmployee /> -->
+  <!-- <Suggets /> -->
+  <Fichaje />
 </template>
 <style>
 html,

@@ -1,14 +1,9 @@
-/* html,
-body,
-#app {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  background: linear-gradient(to bottom, #1c4a50, #2d7078);
+.login-wrapper {
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  background: linear-gradient(to bottom, #1c4a50, #2d7078);
 }
 
 .login-container {
@@ -73,8 +68,9 @@ body,
 .login-button:hover {
   background-color: #333;
 }
+
 .login {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-} */
+}

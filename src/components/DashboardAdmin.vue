@@ -1,46 +1,42 @@
 <script setup>
 import "../styles/dashboardAdmin.css";
+import Header from "../components/Header.vue";
+import Footer from "../components/Footer.vue";
 </script>
 
 <template>
   <div class="dashboard">
-    <header class="dashboard-header">
-      <img src="../assets/logo3d.png" alt="Logo" class="logo" />
-      <div class="user-info">
-        <span>Hola, Fulano</span>
-        <img src="../assets/googleIcon.png" alt="User" class="user-icon" />
-      </div>
-    </header>
-
+    <Header />
     <main class="dashboard-grid">
       <div class="dashboard-item">
-        <img src="../assets/1.png" alt="Flujo" />
+        <img src="../assets/cajaDiaria.png" alt="cajaDiaria" />
         <span>Flujo de caja</span>
       </div>
       <div class="dashboard-item">
-        <img src="../assets/2.png" alt="Fichaje" />
+        <img src="../assets/fichaje.png" alt="Fichaje" />
         <span>Fichaje</span>
       </div>
       <div class="dashboard-item">
-        <img src="../assets/3.png" alt="Vacaciones" />
+        <img src="../assets/vacaciones.png" alt="Vacaciones" />
         <span>Vacaciones</span>
       </div>
       <div class="dashboard-item">
-        <img src="../assets/4.png" alt="Nómina" />
-        <span>Nómina</span>
+        <img src="../assets/nomina.png" alt="Nomina" />
+        <span>Nòmina</span>
       </div>
       <div class="dashboard-item">
-        <img src="../assets/5.png" alt="Contrato" />
+        <img src="../assets/contrato.png" alt="Contrato" />
         <span>Contrato</span>
       </div>
       <div class="dashboard-item">
-        <img src="../assets/6.png" alt="Ventas" />
+        <img src="../assets/VentasGeneral.png" alt="Ventas" />
         <span>Ventas</span>
       </div>
     </main>
   </div>
+  <Footer />
 </template>
-<style scoped>
+<!-- <style scoped>
 .dashboard {
   display: flex;
   flex-direction: column;
@@ -104,4 +100,4 @@ import "../styles/dashboardAdmin.css";
 .dashboard-item:hover {
   transform: scale(1.05);
 }
-</style>
+</style> -->
