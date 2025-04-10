@@ -71,7 +71,9 @@ onUnmounted(() => {
     <main class="main-container">
       <div class="clock">
         <span class="hours">{{ horas }}:</span>
+
         <span class="minutos">{{ minutos }}:</span>
+        <!-- <span>:</span> -->
         <span class="segundos">{{ segundos }}</span>
       </div>
 
@@ -93,18 +95,5 @@ onUnmounted(() => {
     <Footer />
   </div>
 </template>
-<!-- <template>
-  <div class="dashboard">
-    <Header />
-    <main>
-      <div class="clock">
-        <span class="hours">{{ horas }}:</span>
-        <span class="hours">{{ minutos }}: </span>
-        <span class="hours">{{ segundos }} </span>
-      </div>
-    </main>
-  </div>
-  <Footer />
-</template> -->
 
 <style scoped></style>

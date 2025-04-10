@@ -20,6 +20,9 @@
 }
 
 .clock {
+  /* display: flex;
+  flex-direction: row; */
+  /* justify-content: space-between; */
   font-size: 3rem;
   margin-bottom: 2rem;
   background: rgba(255, 255, 255, 0.1);
@@ -29,9 +32,21 @@
   /* padding-bottom: 4rem; */
 }
 
-.hours {
+/* .hours {
   margin: 0 0.2rem;
+  background-color: #e0202032;
+  border-radius: 20%;
+  padding: 0.5rem;
 }
+.minutos {
+  margin: 0 0.2rem;
+  background-color: #20e060d2;
+  border-radius: 20%;
+  padding: 0.5rem;
+}
+.segundos {
+  font-size: 1rem;
+} */
 
 .action-buttons {
   display: flex;
