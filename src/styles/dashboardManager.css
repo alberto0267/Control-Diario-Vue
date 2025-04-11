@@ -1,6 +1,5 @@
 .dashboard {
   min-height: 100vh;
-  background: linear-gradient(to bottom, #004d5a, #00717d);
   padding: 0;
   box-sizing: border-box;
   display: flex;

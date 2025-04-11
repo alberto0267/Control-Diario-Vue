@@ -8,7 +8,11 @@ import logo from "./assets/logo.png";
 // import DashboardEmployee from "./components/DashboardEmployee.vue";
 // import Suggets from "./components/Suggets.vue";
 // import Fichaje from "./components/Fichaje.vue";
+<<<<<<< HEAD
 import Calendar from "./components/Calendario.vue";
+=======
+import Vacaciones from "./components/Vacaciones.vue";
+>>>>>>> 445ad1b0bdd8c01824210028c95454d6bc8ed051
 </script>
 
 <template>
@@ -19,7 +23,11 @@ import Calendar from "./components/Calendario.vue";
   <!-- <DashboardEmployee /> -->
   <!-- <Suggets /> -->
   <!-- <Fichaje /> -->
+<<<<<<< HEAD
   <Calendar />
+=======
+  <Vacaciones />
+>>>>>>> 445ad1b0bdd8c01824210028c95454d6bc8ed051
 </template>
 <style>
 html,
@@ -29,7 +37,7 @@ body,
   padding: 0;
   min-height: 100vh;
   width: 100%;
-  background: linear-gradient(to bottom, #1c4a50, #2d7078);
+  background: linear-gradient(to bottom, #004d5a, #00717d);
   font-family: "Segoe UI", sans-serif;
 }
 </style>
