@@ -1,34 +1,26 @@
-html,
-body,
-#app {
-  margin: 0;
-  padding: 0;
+.login-wrapper {
+  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  /* min-height: 100vh; */
-  box-sizing: border-box;
-  overflow-y: hidden;
+  justify-content: center;
+  align-items: center;
   background: linear-gradient(to bottom, #1c4a50, #2d7078);
-  display: grid;
-  min-height: 98.5vh;
 }
+
 .login-container {
-  min-height: 98.5vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 1.5rem;
   padding: 2rem;
-  gap: 5rem;
 }
 
 .login-logo {
-  width: 180px;
-  margin-top: 2rem;
+  width: 18rem;
 }
 
 .login-box {
-  width: 90%;
-  max-width: 290px;
+  width: 100%;
+  max-width: 300px;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.4);
   border-radius: 10px;
@@ -50,18 +42,19 @@ body,
   outline: none;
   font-size: 1rem;
   background-color: white;
+  color: black;
+  font-weight: bold;
 }
 
 .forgot-link {
   color: #c4c4c4;
   font-size: 0.85rem;
   text-decoration: none;
-  margin-top: -0.5rem;
+  margin-top: 0.5rem;
 }
 
 .login-button {
-  width: 90%;
-  max-width: 320px;
+  width: 100%;
   padding: 0.8rem;
   background-color: #1a1a1a;
   color: white;
@@ -74,4 +67,10 @@ body,
 
 .login-button:hover {
   background-color: #333;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }

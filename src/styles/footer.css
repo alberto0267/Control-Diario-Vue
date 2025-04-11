@@ -1,0 +1,18 @@
+.dashboard-footer {
+  width: 100%;
+  min-width: 100vw;
+  height: 60px;
+  background-color: #9799999a;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  box-sizing: border-box;
+  border-bottom-left-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+  border: 1px solid black;
+}
+.dashboard-footer a {
+  text-decoration: none;
+  color: white;
+}
