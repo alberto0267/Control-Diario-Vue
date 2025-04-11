@@ -7,7 +7,8 @@ import logo from "./assets/logo.png";
 // import DashboardManager from "./components/DashboardManager.vue";
 // import DashboardEmployee from "./components/DashboardEmployee.vue";
 // import Suggets from "./components/Suggets.vue";
-import Fichaje from "./components/Fichaje.vue";
+// import Fichaje from "./components/Fichaje.vue";
+import Calendar from "./components/Calendario.vue";
 </script>
 
 <template>
@@ -17,7 +18,8 @@ import Fichaje from "./components/Fichaje.vue";
   <!-- <DashboardManager /> -->
   <!-- <DashboardEmployee /> -->
   <!-- <Suggets /> -->
-  <Fichaje />
+  <!-- <Fichaje /> -->
+  <Calendar />
 </template>
 <style>
 html,
