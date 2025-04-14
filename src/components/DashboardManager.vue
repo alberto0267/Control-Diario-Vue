@@ -22,7 +22,7 @@ import Footer from "../components/Footer.vue";
 
       <div class="dashboard-row center-row">
         <div class="dashboard-item">
-          <img src="../assets/cajaDiaria.png" alt="Flujo de caja" />
+          <img src="../assets/cajaDiaria1.png" alt="Flujo de caja" />
           <span>Flujo de caja</span>
         </div>
       </div>

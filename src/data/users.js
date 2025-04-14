@@ -12,10 +12,4 @@ export const dbUser = [
     password: "victor",
     nombre: "Victor Ramirez",
   },
-  {
-    id: 3,
-    correo: "javi@gmail.com",
-    password: "javi",
-    nombre: "Javi ",
-  },
 ];

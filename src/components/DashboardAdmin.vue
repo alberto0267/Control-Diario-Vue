@@ -9,7 +9,7 @@ import Footer from "../components/Footer.vue";
     <Header />
     <main class="dashboard-grid">
       <div class="dashboard-item">
-        <img src="../assets/cajaDiaria.png" alt="cajaDiaria" />
+        <img src="../assets/cajaDiaria1.png" alt="cajaDiaria" />
         <span>Flujo de caja</span>
       </div>
       <div class="dashboard-item">
@@ -29,8 +29,8 @@ import Footer from "../components/Footer.vue";
         <span>Contrato</span>
       </div>
       <div class="dashboard-item">
-        <img src="../assets/VentasGeneral.png" alt="Ventas" />
-        <span>Ventas</span>
+        <img src="../assets/VentasGeneral1.png" alt="Ventas" />
+        <span class="ventas">Ventas</span>
       </div>
     </main>
   </div>

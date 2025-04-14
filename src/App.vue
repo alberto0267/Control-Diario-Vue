@@ -1,6 +1,6 @@
 <script setup>
-import logo from "./assets/logo.png";
-// import Create from "./components/CreateAccount.vue";
+// import logo from "./assets/logo.png";
+// import Create from "./components/CreateAccouÇnt.vue";
 // import Login from "./components/Login.vue";
 // Esto es para maquetar nada mas, luego se le tiene que meter pinia y view router
 // import DashboardAdmind from "./components/DashboardAdmin.vue";
@@ -8,26 +8,18 @@ import logo from "./assets/logo.png";
 // import DashboardEmployee from "./components/DashboardEmployee.vue";
 // import Suggets from "./components/Suggets.vue";
 // import Fichaje from "./components/Fichaje.vue";
-<<<<<<< HEAD
-import Calendar from "./components/Calendario.vue";
-=======
-import Vacaciones from "./components/Vacaciones.vue";
->>>>>>> 445ad1b0bdd8c01824210028c95454d6bc8ed051
+import CalendarE from "./components/CalendarioEmployee.vue";
 </script>
 
 <template>
-  <!-- <Create /> -->
   <!-- <Login /> -->
+  <!-- <Create /> -->
   <!-- <DashboardAdmind /> -->
   <!-- <DashboardManager /> -->
   <!-- <DashboardEmployee /> -->
   <!-- <Suggets /> -->
   <!-- <Fichaje /> -->
-<<<<<<< HEAD
-  <Calendar />
-=======
-  <Vacaciones />
->>>>>>> 445ad1b0bdd8c01824210028c95454d6bc8ed051
+  <CalendarE />
 </template>
 <style>
 html,
