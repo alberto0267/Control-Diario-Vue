@@ -9,6 +9,7 @@
 // import Suggets from "./components/Suggets.vue";
 // import Fichaje from "./components/Fichaje.vue";
 import CalendarE from "./components/CalendarioEmployee.vue";
+// import CalendarA from "./components/CalendarioAdmin.vue";
 </script>
 
 <template>
@@ -20,6 +21,7 @@ import CalendarE from "./components/CalendarioEmployee.vue";
   <!-- <Suggets /> -->
   <!-- <Fichaje /> -->
   <CalendarE />
+  <!-- <CalendarA /> -->
 </template>
 <style>
 html,

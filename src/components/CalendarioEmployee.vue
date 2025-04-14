@@ -10,7 +10,11 @@ import "../styles/calendario.css";
     <div class="container">
       <VCalendar class="calendario" :rows="2" />
       <div class="container-info">
-        <h2>Vacaciones 🌄</h2>
+        <div class="pImg">
+          <h2>Vacaciones</h2>
+          <img src="../assets/vacacionesAvatar.png" alt="vacacionesAvatar" />
+        </div>
+
         <ol>
           Mes
           <li>Fecha inicio:</li>
