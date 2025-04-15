@@ -1,0 +1,17 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  /* min-height: 100vh; */
+}
+
+.main-content {
+  flex: 1;
+  padding-left: 6px;
+  padding-top: 2rem;
+  min-height: 86vh;
+}
+
+.tabla {
+  width: 380px;
+  height: 380px;
+}
