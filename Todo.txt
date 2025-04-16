@@ -1,0 +1,15 @@
+
+provisidon de perdido es el 3%, va cambiando cada 3 inventarios
+
+todo escalon que pongas lo pierde el franquiciado
+
+provisio es 3%
+2% royaltis
+3% servicios dias
+
+añadir opcion de modificarlo, ya se subir de un 4 o bajar un a 2
+
+predidois almacen es variable y tambein escalones.
+
+materiao auxiliar es variable, tambein
+

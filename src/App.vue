@@ -10,7 +10,8 @@
 // import Fichaje from "./components/Fichaje.vue";
 // import CalendarE from "./components/CalendarioEmployee.vue";
 // import CalendarA from "./components/CalendarioAdmin.vue";
-import VentasDiarias from "./components/VentasDiarias.vue";
+// import VentasDiarias from "./components/VentasDiarias.vue";
+import FlujoCaja from "./components/FlujoCaja.vue";
 </script>
 
 <template>
@@ -23,7 +24,8 @@ import VentasDiarias from "./components/VentasDiarias.vue";
   <!-- <Fichaje /> -->
   <!-- <CalendarE /> -->
   <!-- <CalendarA /> -->
-  <VentasDiarias />
+  <!-- <VentasDiarias /> -->
+  <FlujoCaja />
 </template>
 <style>
 html,

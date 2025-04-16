@@ -1,0 +1,94 @@
+.contenedor {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+
+  padding-bottom: 11.5rem;
+}
+
+.titulo {
+  font-size: 24px;
+  margin-bottom: 1.5rem;
+}
+
+.campo {
+  margin-bottom: 1.5rem;
+}
+
+.campo label {
+  margin-right: 0.5rem;
+}
+
+input {
+  padding: 0.4rem;
+  width: 120px;
+}
+
+.tabla {
+  width: 100%;
+  /* border-collapse: collapse; */
+  margin-top: 1rem;
+}
+
+.tabla th,
+.tabla td {
+  border: 1px solid #ccc;
+  padding: 0.6rem;
+  text-align: left;
+}
+
+.separador td {
+  background-color: #f0f0f0;
+}
+
+.total td {
+  background-color: #e6ffe6;
+}
+
+.botonera {
+  padding: 0.5rem;
+  background-color: #1a1a1a;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  /* text-decoration: none; */
+  transition: background-color 0.3s;
+  margin-top: 20px;
+}
+
+button {
+  background-color: #1c87c9;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #135f96;
+}
+thead {
+  background-color: #f0f0f0;
+}
+tr {
+  font-weight: bold;
+}
+.minus {
+  color: red;
+  /* font-weight: lighter; */
+}
+table {
+  border-radius: 24px;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.8) 28%,
+    #d1d5d8 100%
+  );
+  box-shadow: 16px 17px 7px 3px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s ease;
+}
