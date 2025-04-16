@@ -1,12 +1,17 @@
 <script setup>
 import logo from "../assets/logo3d.png";
 import "../styles/login.css";
+import { useRouter } from "vue-router";
+
+const router = useRouter();
+
+const goToIndex = () => router.push("/");
 </script>
 
 <template>
   <div class="login-wrapper">
     <div class="login-container">
-      <img :src="logo" alt="Logo" class="login-logo" />
+      <img :src="logo" alt="Logo" class="login-logo" @click="goToIndex" />
 
       <form class="login-box">
         <div class="login">
@@ -21,7 +26,9 @@ import "../styles/login.css";
             required
           />
 
-          <a href="#" class="forgot-link">Olvide Contraseña</a>
+          <div class="forgot-password">
+            <a href="#" class="forgot-link">¿Has olvidado la contraseña?</a>
+          </div>
         </div>
         <button class="login-button" type="submit">Iniciar sesión</button>
       </form>

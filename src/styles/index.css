@@ -1,0 +1,82 @@
+.index-wrapper {
+  min-height: 100vh;
+  align-items: center;
+  background: linear-gradient(to bottom, #1c4a50, #2d7078);
+}
+
+.index-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  justify-content: center;
+  text-align: center;
+}
+
+.index-logo {
+  width: 23rem;
+}
+
+.index-box {
+  width: 80%;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.7rem;
+}
+
+.forgot-password {
+  padding-top: 1rem;
+  padding-bottom: 1.3rem;
+  margin-left: 50px;
+  margin-right: 50px;
+  text-align: center;
+  border-bottom: 2px solid #1a1a1a;
+}
+
+.forgot-link {
+  color: #c4c4c4;
+  font-size: 0.85rem;
+  text-decoration: none;
+}
+
+.index-button {
+  width: 100%;
+  padding: 1.3rem;
+  background-color: #1a1a1a;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.shop-button {
+  width: 100%;
+  padding: 1rem;
+  background-color: white;
+  color: #1a1a1a;
+  border: 1px solid black;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 22px;
+}
+
+.new-shop {
+  color: #c4c4c4;
+  font-size: 1.7rem;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* //////////////////////////////////////////////////////////////////////////// */
+
+.index-button:hover {
+  background-color: #333;
+}

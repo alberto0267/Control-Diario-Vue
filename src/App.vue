@@ -1,4 +1,5 @@
 <script setup>
+// import  Index from "./components/index.vue";
 // import logo from "./assets/logo.png";
 // import Create from "./components/CreateAccouÇnt.vue";
 // import Login from "./components/Login.vue";
@@ -11,10 +12,11 @@
 // import CalendarE from "./components/CalendarioEmployee.vue";
 // import CalendarA from "./components/CalendarioAdmin.vue";
 // import VentasDiarias from "./components/VentasDiarias.vue";
-import FlujoCaja from "./components/FlujoCaja.vue";
+// import FlujoCaja from "./components/FlujoCaja.vue";
 </script>
 
 <template>
+  <router-view />
   <!-- <Login /> -->
   <!-- <Create /> -->
   <!-- <DashboardAdmind /> -->
@@ -25,11 +27,10 @@ import FlujoCaja from "./components/FlujoCaja.vue";
   <!-- <CalendarE /> -->
   <!-- <CalendarA /> -->
   <!-- <VentasDiarias /> -->
-  <FlujoCaja />
+  <!-- <FlujoCaja /> -->
 </template>
 <style>
 html,
-body,
 #app {
   margin: 0;
   padding: 0;
