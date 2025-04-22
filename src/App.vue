@@ -1,6 +1,5 @@
 <script setup>
 // import  Index from "./components/index.vue";
-// import logo from "./assets/logo.png";
 // import Create from "./components/CreateAccouÇnt.vue";
 // import Login from "./components/Login.vue";
 // Esto es para maquetar nada mas, luego se le tiene que meter pinia y view router
