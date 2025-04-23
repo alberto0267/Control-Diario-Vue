@@ -1,4 +1,6 @@
 <script setup>
+import Header from "../components/Header.vue";
+
 import Calendario from "vue-cal";
 import "vue-cal/dist/vuecal.css";
 import { ref, onMounted } from "vue";
@@ -24,6 +26,7 @@ const eventos = ref([]);
 </script>
 
 <template>
+  <Header />
   <div class="calendario-container">
     <h2 class="titulo">Vacaciones</h2>
     <Calendario locale="es" :events="eventos" available-views="month" />

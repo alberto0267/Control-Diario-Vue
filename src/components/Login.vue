@@ -6,6 +6,7 @@ import { useRouter } from "vue-router";
 const router = useRouter();
 
 const goToIndex = () => router.push("/");
+const goToLobby = () => router.push("/employee");
 </script>
 
 <template>
@@ -30,7 +31,7 @@ const goToIndex = () => router.push("/");
             <a href="#" class="forgot-link">¿Has olvidado la contraseña?</a>
           </div>
         </div>
-        <button class="login-button" type="submit">Iniciar sesión</button>
+        <button class="login-button" type="submit" @click="goToLobby">Iniciar sesión</button>
       </form>
     </div>
   </div>
