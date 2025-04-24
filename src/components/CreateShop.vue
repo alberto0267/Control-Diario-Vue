@@ -22,14 +22,14 @@ const goToIndex = () => router.push("/");
     />
 
     <form class="form-box">
-      <label>Nombre del Jefe</label>
+      <label>Nombre de tienda</label>
       <input type="text" placeholder="Nombre del jefe" />
 
-      <label>Apellidos del Jefe</label>
+      <label>Responsable</label>
       <input type="text" placeholder="Apellidos del jefe" />
 
       <label>Email</label>
-      <input type="email" placeholder="Email" />
+      <input type="email" placeholder="Email de Empresa" />
 
       <label>Tipo de tienda que trabajas</label>
       <select id="tipoTienda" v-model="tipoTienda">
@@ -43,7 +43,7 @@ const goToIndex = () => router.push("/");
         <input type="text" placeholder="Especificar..." id="otros" />
       </div>
 
-      <label>Número de tienda</label>
+      <label>Número de tienda (si aplica)</label>
       <input type="text" placeholder="Número tienda" />
 
       <label>Password</label>
