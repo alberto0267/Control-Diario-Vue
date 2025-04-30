@@ -1,8 +1,11 @@
 <script setup>
 import "../styles/suggets.css";
+import Header from "../components/Header.vue";
+import Footer from "../components/Footer.vue";
 </script>
 
 <template>
+  <Header />
   <div class="form-container">
     <img src="../assets/Logo.png" alt="Logo" class="form-logo" />
     <h2>Sugerencias</h2>
@@ -24,4 +27,5 @@ import "../styles/suggets.css";
       <button type="submit">Enviar</button>
     </form>
   </div>
+  <Footer />
 </template>
