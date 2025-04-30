@@ -2,10 +2,56 @@
 import logo from "../assets/logo3d.png";
 import "../styles/login.css";
 import { useRouter } from "vue-router";
-
+import { ref } from "vue";
 const router = useRouter();
 
 const goToIndex = () => router.push("/");
+
+const email = ref("");
+const password = ref("");
+
+function enviarForm(e) {
+  e.preventDefault();
+
+  fetch("http://localhost:8000/api/login", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Accept: "application/json",
+    },
+
+    body: JSON.stringify({
+      email: email.value,
+      password: password.value,
+    }),
+  })
+    .then(async (response) => {
+      if (!response.ok) {
+        const errorData = await response.json();
+        console.error("Errores de backend", errorData.errors); //IMportante
+        throw new Error("Algo falla");
+      }
+      return response.json();
+    })
+
+    .then((data) => {
+      console.log("mensaje del servidor", data);
+      localStorage.setItem("token", data.token);
+      localStorage.setItem("nombre", data.user.name);
+      const user = data.user;
+
+      if (user.admin) {
+        router.push("DashboardAdmin");
+      } else if (user.subadmin) {
+        router.push("DashboardManager");
+      } else {
+        router.push("DashboardEmployee");
+      }
+    })
+    .catch((error) => {
+      console.error("error: ", error);
+    });
+}
 </script>
 
 <template>
@@ -13,16 +59,23 @@ const goToIndex = () => router.push("/");
     <div class="login-container">
       <img :src="logo" alt="Logo" class="login-logo" @click="goToIndex" />
 
-      <form class="login-box">
+      <form class="login-box" @submit.prevent="enviarForm">
         <div class="login">
           <label for="email">Email</label>
-          <input type="email" id="email" placeholder="Email" required />
+          <input
+            type="email"
+            id="email"
+            placeholder="Email"
+            required
+            v-model="email"
+          />
 
           <label for="password">Password</label>
           <input
             type="password"
             id="password"
             placeholder="Password"
+            v-model="password"
             required
           />
 

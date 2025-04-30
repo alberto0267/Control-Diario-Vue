@@ -1,12 +1,14 @@
 <script setup>
+import { ref } from "vue";
 import "../styles/dashboardManager.css";
 import Header from "../components/Header.vue";
 import Footer from "../components/Footer.vue";
+const nombre = ref(localStorage.getItem("nombre"));
 </script>
 
 <template>
   <div class="dashboard">
-    <Header />
+    <Header :nombre="nombre" />
 
     <main class="dashboard-grid">
       <div class="dashboard-row">

@@ -80,6 +80,7 @@ function enviarForm(e) {
         type="text"
         placeholder="Nombre del jefe"
         v-model="nombre_tienda"
+        @submit.prevent="enviarForm"
       />
 
       <label>Responsable</label>
