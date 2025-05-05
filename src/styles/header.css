@@ -18,7 +18,48 @@
   width: 80px;
 }
 
+.user-info {
+  position: relative;
+  cursor: pointer;
+}
+
 .user-icon {
   height: 28px;
   border-radius: 50%;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  z-index: 1000;
+  background-color: black;
+}
+
+.dropdown-menu.show {
+  display: block;
+}
+
+.dropdown-menu p {
+  margin: 5px 0;
+}
+
+.dropdown-menu button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dropdown-menu button:hover {
+  background-color: #e60000;
 }
