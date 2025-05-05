@@ -1,10 +1,11 @@
 .dashboard {
   min-height: 100vh;
-
   padding: 0;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  margin-bottom: -60px;
+  border: 3px solid red;
 }
 
 .user-info {
@@ -23,9 +24,10 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 69px;
-  padding: 210px 16px;
+  padding: 20% 15px;
   align-items: center;
   justify-items: center;
+  border: 3px solid blue;
 }
 
 .dashboard-item {
@@ -63,6 +65,7 @@
   text-align: center;
   font-weight: bold;
 }
+
 .pImg {
   display: flex;
   background-color: aqua;

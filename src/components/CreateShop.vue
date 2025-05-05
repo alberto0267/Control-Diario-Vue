@@ -23,13 +23,13 @@ const goToIndex = () => router.push("/");
 
     <form class="form-box">
       <label>Nombre del Jefe</label>
-      <input type="text" placeholder="Nombre del jefe" />
+      <input type="text" class="fix" placeholder="Nombre del jefe" />
 
       <label>Apellidos del Jefe</label>
-      <input type="text" placeholder="Apellidos del jefe" />
+      <input type="text" class="fix" placeholder="Apellidos del jefe" />
 
       <label>Email</label>
-      <input type="email" placeholder="Email" />
+      <input type="email" class="fix" placeholder="Email" />
 
       <label>Tipo de tienda que trabajas</label>
       <select id="tipoTienda" v-model="tipoTienda">
@@ -44,13 +44,13 @@ const goToIndex = () => router.push("/");
       </div>
 
       <label>Número de tienda</label>
-      <input type="text" placeholder="Número tienda" />
+      <input type="text" class="fix" placeholder="Número tienda" />
 
       <label>Password</label>
-      <input type="password" placeholder="Password" />
+      <input type="password" class="fix" placeholder="Password" />
 
       <label>Re - Password</label>
-      <input type="password" placeholder="Re - Password" />
+      <input type="password" class="fix" placeholder="Re - Password" />
       <button class="send-button" type="submit">Enviar</button>
     </form>
   </div>

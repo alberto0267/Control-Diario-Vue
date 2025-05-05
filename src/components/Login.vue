@@ -17,12 +17,13 @@ const goToLobby = () => router.push("/employee");
       <form class="login-box">
         <div class="login">
           <label for="email">Email</label>
-          <input type="email" id="email" placeholder="Email" required />
+          <input type="email" class="fix" id="email" placeholder="Email" required />
 
           <label for="password">Password</label>
           <input
             type="password"
             id="password"
+            class="fix"
             placeholder="Password"
             required
           />
