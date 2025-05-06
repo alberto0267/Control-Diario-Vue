@@ -3,14 +3,19 @@ import { ref } from "vue";
 import "../styles/dashboardManager.css";
 import Header from "../components/Header.vue";
 import Footer from "../components/Footer.vue";
+import { useRouter } from "vue-router";
+
+const router = useRouter();
 const nombre = ref(localStorage.getItem("nombre"));
+
+const flujoCaja = () => router.push("/flujo-caja");
 </script>
 
 <template>
   <div class="dashboard">
     <Header :nombre="nombre" />
 
-    <main class="dashboard-grid">
+    <main class="dashboard-gridM">
       <div class="dashboard-row">
         <div class="dashboard-item">
           <img src="../assets/fichaje.png" alt="Fichaje" />
@@ -23,7 +28,7 @@ const nombre = ref(localStorage.getItem("nombre"));
       </div>
 
       <div class="dashboard-row center-row">
-        <div class="dashboard-item">
+        <div class="dashboard-item" @click="flujoCaja">
           <img src="../assets/cajaDiaria1.png" alt="Flujo de caja" />
           <span>Flujo de caja</span>
         </div>

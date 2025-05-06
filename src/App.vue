@@ -6,7 +6,7 @@
 // import DashboardAdmind from "./components/DashboardAdmin.vue";
 // import DashboardManager from "./components/DashboardManager.vue";
 // import DashboardEmployee from "./components/DashboardEmployee.vue";
-import Suggets from "./components/Suggets.vue";
+// import Suggets from "./components/Suggets.vue";
 // import Fichaje from "./components/Fichaje.vue";
 // import CalendarE from "./components/CalendarioEmployee.vue";
 // import CalendarA from "./components/CalendarioAdmin.vue";
@@ -15,13 +15,13 @@ import Suggets from "./components/Suggets.vue";
 </script>
 
 <template>
-  <!-- <router-view /> -->
+  <router-view />
   <!-- <Login /> -->
   <!-- <Create /> -->
   <!-- <DashboardAdmind /> -->
   <!-- <DashboardManager /> -->
   <!-- <DashboardEmployee /> -->
-  <Suggets />
+  <!-- <Suggets /> -->
   <!-- <Fichaje /> -->
   <!-- <CalendarE /> -->
   <!-- <CalendarA /> -->

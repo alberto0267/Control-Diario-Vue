@@ -10,8 +10,8 @@ const props = defineProps({
   <header class="dashboard-header">
     <img src="../assets/logo3d.png" alt="Logo" class="logo" />
     <div class="user-info">
-      <span>Hola, {{ nombre }} </span>
-      <img src="../assets/googleIcon.png" alt="User" class="user-icon" />
+      <span>Hola, {{ nombre }}</span>
+      <img src="../assets/avatar.png" alt="User" class="user-icon" />
     </div>
   </header>
 </template>

@@ -2,12 +2,20 @@
 import "../styles/suggets.css";
 import Header from "../components/Header.vue";
 import Footer from "../components/Footer.vue";
+import { useRouter } from "vue-router";
+const router = useRouter();
+const goToIndex = () => router.push("/");
 </script>
 
 <template>
   <Header />
   <div class="form-container">
-    <img src="../assets/Logo.png" alt="Logo" class="form-logo" />
+    <img
+      src="../assets/Logo.png"
+      alt="Logo"
+      class="form-logo"
+      @click="goToIndex"
+    />
     <h2>Sugerencias</h2>
     <p>
       Las sugerencias pueden ser anonimas o con tu nombre, tus comentarios son

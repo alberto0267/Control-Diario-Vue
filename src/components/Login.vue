@@ -3,6 +3,9 @@ import logo from "../assets/logo3d.png";
 import "../styles/login.css";
 import { useRouter } from "vue-router";
 import { ref } from "vue";
+
+/* Hay que importar los routers  */
+
 const router = useRouter();
 
 const goToIndex = () => router.push("/");
@@ -37,15 +40,16 @@ function enviarForm(e) {
     .then((data) => {
       console.log("mensaje del servidor", data);
       localStorage.setItem("token", data.token);
-      localStorage.setItem("nombre", data.user.name);
+      localStorage.setItem("nombre", data.user.nombre);
       const user = data.user;
 
       if (user.admin) {
-        router.push("DashboardAdmin");
+        /* debe ser comop lo puse en routes*/
+        router.push("/dashboard-admin");
       } else if (user.subadmin) {
-        router.push("DashboardManager");
+        router.push("/dashboard-manager");
       } else {
-        router.push("DashboardEmployee");
+        router.push("/dashboard-employee");
       }
     })
     .catch((error) => {

@@ -18,12 +18,13 @@
   border-radius: 50%;
 }
 
-.dashboard-grid {
+.dashboard-gridM {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 48px;
-  padding: 64px 16px;
+  /* align-items: center; */
+  gap: 69px;
+  padding: 92px 16px;
+  justify-items: center;
 }
 .dashboard-item {
   display: flex;
