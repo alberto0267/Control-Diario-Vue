@@ -1,6 +1,12 @@
 <script setup>
 import "../styles/header.css";
+import { ref, onMounted } from "vue";
 
+const nombre = ref("");
+
+onMounted(() => {
+  nombre.value = localStorage.getItem("nombre") || "";
+});
 const props = defineProps({
   nombre: String,
 });
@@ -10,7 +16,7 @@ const props = defineProps({
   <header class="dashboard-header">
     <img src="../assets/logo3d.png" alt="Logo" class="logo" />
     <div class="user-info">
-      <span>Hola, {{ nombre }}</span>
+      <span>Hola, {{ nombre ? `, ${nombre}` : "" }}</span>
       <img src="../assets/avatar.png" alt="User" class="user-icon" />
     </div>
   </header>

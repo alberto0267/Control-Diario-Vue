@@ -39,8 +39,11 @@ function enviarForm(e) {
 
     .then((data) => {
       console.log("mensaje del servidor", data);
-      localStorage.setItem("token", data.token);
+      //Es asi porque en la pai manda acce_token
+      localStorage.setItem("token", data.access_token);
+
       localStorage.setItem("nombre", data.user.nombre);
+      localStorage.setItem("user_id", data.user.id);
       const user = data.user;
 
       if (user.admin) {
