@@ -99,22 +99,28 @@ function enviarFichaje(e) {
     headers: {
       "Content-Type": "application/json",
       Accept: "application/json",
-      //Siempre que neseita token debo poner esto de abajo asi autentica api rest
-      Authorization: `Bearer ${token}`,
+      Authorization: `Bearer ${localStorage.getItem("token")}`,
     },
     body: JSON.stringify(datos),
   })
     .then(async (response) => {
+      if (response.status === 409) {
+        const msg = await response.json();
+        console.log("⚠️ Ya fichaste: " + msg.error);
+        return;
+      }
+
       if (!response.ok) {
         const errorData = await response.json();
-        console.error("Errores del backend:", errorData.errors);
+        console.error("Errores del backend:", errorData);
         throw new Error("Algo falló");
       }
+
       return response.json();
     })
     .then((data) => {
       console.log("mensaje del servidor", data);
-      localStorage.setItem("token", data.access_token);
+      // localStorage.setItem("token", data.access_token);
     })
     .catch((error) => {
       console.error("error: ", error);

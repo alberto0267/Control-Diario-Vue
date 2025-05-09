@@ -10,6 +10,7 @@ import VacacionesAdmin from "../components/CalendarioAdmin.vue";
 import VacacionesEmployee from "../components/CalendarioEmployee.vue";
 import Fichaje from "../components/Fichaje.vue";
 import FlujoCaja from "../components/FlujoCaja.vue";
+import HistorialFichaje from "../components/HistorialFichaje.vue";
 // import VacacionesAdmin from "../components/Vacaciones.vue";
 import VentasDiarias from "../components/VentasDiarias.vue";
 import Suggets from "../components/Suggets.vue";
@@ -28,6 +29,7 @@ const routes = [
   // { path: "/vacaciones", component: Vacaciones },
   { path: "/ventas-diarias", component: VentasDiarias },
   { path: "/sugerencias", component: Suggets },
+  { path: "/historial-fichaje", component: HistorialFichaje },
 ];
 
 const router = createRouter({

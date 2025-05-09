@@ -14,6 +14,7 @@ const VacacionesAdmin = () => router.push("/vacaciones-admin");
 const nomina = () => router.push("/nomina");
 const contrato = () => router.push("/contrato");
 const ventas = () => router.push("ventas-diarias");
+const historialFichaje = () => router.push("/historial-fichaje");
 
 const nombre = ref(localStorage.getItem("nombre"));
 </script>
@@ -45,6 +46,10 @@ const nombre = ref(localStorage.getItem("nombre"));
       <div class="dashboard-item" @click="ventas">
         <img src="../assets/VentasGeneral1.png" alt="Ventas" />
         <span class="ventas">Ventas</span>
+      </div>
+      <div class="dashboard-item" @click="historialFichaje">
+        <img src="../assets/historia.png" alt="Historial" />
+        <span class="historial">Historial Fichaje</span>
       </div>
     </main>
   </div>
