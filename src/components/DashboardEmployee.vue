@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from "vue";
-import "../styles/DashboardEmployee.css";
+import "../styles/dashboard.css";
 import Header from "../components/Header.vue";
 import Footer from "../components/Footer.vue";
 import { useRouter } from "vue-router";
@@ -8,9 +8,9 @@ import { useRouter } from "vue-router";
 const router = useRouter();
 
 const fichaje = () => router.push("/fichaje");
-const vacacionesEmployee = () => router("/vacaciones-employee");
-const nominaE = () => router.push("/nomina-employee");
-const contratoE = () => router.push("/contrato-employee");
+const vacacionesEmployee = () => router.push("/vacaciones-employee");
+const nominaE = () => router.push("/nomina");
+const contratoE = () => router.push("/contrato");
 
 const nombre = ref(localStorage.getItem("nombre"));
 </script>

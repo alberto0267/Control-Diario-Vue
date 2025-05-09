@@ -1,9 +1,10 @@
 .dashboard {
-  min-height: 100vh;
-  padding: 0;
-  box-sizing: border-box;
+  min-height: 100vh; /* Asegura que el contenedor ocupe toda la altura de la pantalla */
   display: flex;
   flex-direction: column;
+  padding: 0;
+  box-sizing: border-box;
+  margin-bottom: -60px;
 }
 
 .user-info {
@@ -18,14 +19,30 @@
   border-radius: 50%;
 }
 
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 69px;
+  padding: 80px 40px;
+  justify-items: center;
+  flex-grow: 1;
+}
+
+/* Para vista en columna (modo manager por ejemplo) */
 .dashboard-gridM {
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   gap: 69px;
   padding: 92px 16px;
   justify-items: center;
 }
+
+.dashboard-row {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}
+
 .dashboard-item {
   display: flex;
   flex-direction: column;
@@ -50,7 +67,7 @@
 }
 
 .dashboard-item img {
-  width: 109;
+  width: 109px;
   height: 91px;
   object-fit: contain;
 }
@@ -62,8 +79,19 @@
   font-weight: bold;
 }
 
-.dashboard-row {
+.dashboard-footer {
+  height: 60px;
+  background-color: #9799999a;
   display: flex;
-  gap: 40px;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  box-sizing: border-box;
+  border-top: 1px solid black;
+  margin-top: auto; /* Empuja el footer hacia abajo */
+}
+
+.pImg {
+  display: flex;
+  background-color: aqua;
 }
