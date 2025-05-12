@@ -74,6 +74,7 @@ function enviarForm(e) {
       <input type="nombre" placeholder="Nombre" v-model="nombre" />
 
       <label>Email</label>
+
       <input type="email" placeholder="Email" v-model="email" />
 
       <label>Número de empleado</label>
@@ -92,6 +93,7 @@ function enviarForm(e) {
       </select>
       <div v-if="tipoTienda === 'otros'" class="other-shop">
         <label>Especifica el tipo de tienda</label>
+
         <input
           type="text"
           placeholder="Especificar..."

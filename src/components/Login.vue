@@ -10,6 +10,7 @@ const router = useRouter();
 
 const goToIndex = () => router.push("/");
 
+
 const email = ref("");
 const password = ref("");
 
@@ -69,6 +70,7 @@ function enviarForm(e) {
       <form class="login-box" @submit.prevent="enviarForm">
         <div class="login">
           <label for="email">Email</label>
+
           <input
             type="email"
             id="email"
@@ -81,6 +83,7 @@ function enviarForm(e) {
           <input
             type="password"
             id="password"
+            class="fix"
             placeholder="Password"
             v-model="password"
             required
@@ -90,7 +93,7 @@ function enviarForm(e) {
             <a href="#" class="forgot-link">¿Has olvidado la contraseña?</a>
           </div>
         </div>
-        <button class="login-button" type="submit">Iniciar sesión</button>
+        <button class="login-button" type="submit" @click="goToLobby">Iniciar sesión</button>
       </form>
     </div>
   </div>

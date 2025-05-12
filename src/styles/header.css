@@ -18,7 +18,72 @@
   width: 80px;
 }
 
+.user-info {
+  position: relative;
+  cursor: pointer;
+}
+
 .user-icon {
   height: 28px;
   border-radius: 50%;
+}
+
+.user-info {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background-color: #2f2f2f;
+  border-radius: 10px;
+  padding: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  width: 180px;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.dropdown-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  margin-bottom: 8px;
+}
+
+.dropdown-nombre {
+  font-weight: bold;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.logout-button {
+  background-color: #ff4d4d;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.logout-button:hover {
+  background-color: #cc0000;
+}
+
+.dropdown-tienda,
+.dropdown-rol {
+  font-size: 0.85rem;
+  color: #c4c4c4;
+  margin: 2px 0;
+  text-align: center;
 }

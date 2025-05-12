@@ -74,6 +74,7 @@ function enviarForm(e) {
       @click="goToIndex"
     />
 
+
     <form class="form-box" @submit.prevent="enviarForm">
       <label>Nombre de tienda</label>
       <input
@@ -109,6 +110,7 @@ function enviarForm(e) {
           v-model="otros"
         />
       </div>
+
 
       <label>Número de tienda (si aplica)</label>
       <input type="text" placeholder="Número tienda" v-model="numero_tienda" />

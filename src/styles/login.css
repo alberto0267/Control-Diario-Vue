@@ -68,3 +68,7 @@
   flex-direction: column;
   gap: 0.5rem;
 }
+
+.fix {
+  width: 100%;
+}

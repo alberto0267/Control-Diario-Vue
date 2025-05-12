@@ -35,13 +35,14 @@ function descargarFichaje() {
 </script>
 
 <template>
-  <Header />
+  <div class="dashboard">
+    <Header />
 
-  <div>
-    <button @click="descargarFichaje">
-      📄 Descargar historial de fichajes (PDF)
-    </button>
+    <main>
+      <button @click="descargarFichaje">
+        📄 Descargar historial de fichajes (PDF)
+      </button>
+    </main>
   </div>
-
   <Footer />
 </template>
