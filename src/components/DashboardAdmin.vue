@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from "vue";
-import "../styles/dashboardAdmin.css";
+import "../styles/dashboard.css";
 import Header from "../components/Header.vue";
 import Footer from "../components/Footer.vue";
 

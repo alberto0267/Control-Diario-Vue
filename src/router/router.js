@@ -14,6 +14,9 @@ import FlujoCaja from "../components/FlujoCaja.vue";
 // import VacacionesAdmin from "../components/Vacaciones.vue";
 import VentasDiarias from "../components/VentasDiarias.vue";
 import Suggets from "../components/Suggets.vue";
+import Contrato from "../components/Contrato.vue";
+import Nomina from "../components/Nomina.vue";
+
 const routes = [
   { path: "/", component: Index },
   { path: "/login", component: Login },
@@ -30,11 +33,39 @@ const routes = [
   // { path: "/vacaciones", component: Vacaciones },
   { path: "/ventas-diarias", component: VentasDiarias },
   { path: "/sugerencias", component: Suggets },
+  { path: "/contrato", component: Contrato },
+  { path: "/nomina", component: Nomina },
 ];
 
 const router = createRouter({
   history: createWebHistory(),
   routes,
 });
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// NO PUEDO PROBARLO PQ NO ME VA LA BASE DE DATOS, LUEGO PRUEBALO AVR SI FUNCIONA
+
+/* router.beforeEach((to, from, next) => {
+  const token = localStorage.getItem("token");
+
+  const rutasProtegidas = [
+    "/dashboard-admin",
+    "/dashboard-manager",
+    "/dashboard-employee",
+    "/vacaciones-admin",
+    "/vacaciones-employee",
+    "/fichaje",
+    "/flujo-caja",
+    "/ventas-diarias",
+    "/sugerencias",
+  ];
+
+  if (rutasProtegidas.includes(to.path) && !token) {
+    next("/");
+  } else {
+    next();
+  }
+});
+*/
 
 export default router;
