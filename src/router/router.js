@@ -5,30 +5,31 @@ import CreateAccount from "../components/CreateAccount.vue";
 import CreateShop from "../components/CreateShop.vue";
 
 import DashboardAdmin from "../components/DashboardAdmin.vue";
-import DashboardEmployee from "../components/DashboardEmployee.vue";
 import DashboardManager from "../components/DashboardManager.vue";
-
-import FlujoCaja from "../components/FlujoCaja.vue";
+import DashboardEmployee from "../components/DashboardEmployee.vue";
+import VacacionesAdmin from "../components/CalendarioAdmin.vue";
+import VacacionesEmployee from "../components/CalendarioEmployee.vue";
 import Fichaje from "../components/Fichaje.vue";
-import Vacaciones from "../components/Vacaciones.vue";
-// import Nomina from "../components/Nomina.vue";
-// import Contrato from "../components/Contrato.vue";
-import Ventas from "../components/VentasDiarias.vue";
-
+import FlujoCaja from "../components/FlujoCaja.vue";
+// import VacacionesAdmin from "../components/Vacaciones.vue";
+import VentasDiarias from "../components/VentasDiarias.vue";
+import Suggets from "../components/Suggets.vue";
 const routes = [
   { path: "/", component: Index },
   { path: "/login", component: Login },
   { path: "/register", component: CreateAccount },
   { path: "/create", component: CreateShop },
-  { path: "/admin", component: DashboardAdmin },
-  { path: "/employee", component: DashboardEmployee },
-  { path: "/manager", component: DashboardManager },
-  { path: "/caja", component: FlujoCaja },
+
+  { path: "/dashboard-admin", component: DashboardAdmin },
+  { path: "/dashboard-manager", component: DashboardManager },
+  { path: "/dashboard-employee", component: DashboardEmployee },
+  { path: "/vacaciones-admin", component: VacacionesAdmin },
+  { path: "/vacaciones-employee", component: VacacionesEmployee },
   { path: "/fichaje", component: Fichaje },
-  { path: "/vacaciones", component: Vacaciones },
-  // { path: "/nomina", component: Nomina },
-  // { path: "/contrato", component: Contrato },
-  { path: "/ventas", component: Ventas },
+  { path: "/flujo-caja", component: FlujoCaja },
+  // { path: "/vacaciones", component: Vacaciones },
+  { path: "/ventas-diarias", component: VentasDiarias },
+  { path: "/sugerencias", component: Suggets },
 ];
 
 const router = createRouter({

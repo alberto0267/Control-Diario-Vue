@@ -24,6 +24,10 @@
   background-color: #01283239;
 }
 
+p {
+  padding-bottom: 2rem;
+}
+
 .form-box label {
   color: white;
   font-size: 0.9rem;
@@ -48,7 +52,21 @@ textarea {
   color: black;
   height: 18rem;
 }
+
 p,
 h2 {
-  -webkit-text-stroke: 0.2px black;
+  color: white;
+  text-align: center;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: #1a1a1a;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }

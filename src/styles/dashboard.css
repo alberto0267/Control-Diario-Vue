@@ -18,12 +18,13 @@
   border-radius: 50%;
 }
 
-.dashboard-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+
+.dashboard-gridM {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
   gap: 69px;
-  padding: 30% 15px;
-  align-items: center;
+  padding: 92px 16px;
   justify-items: center;
 }
 

@@ -1,35 +1,41 @@
 <script setup>
-import "../styles/dashboard.css";
+
+import { ref } from "vue";
+import "../styles/DashboardEmployee.css";
 import Header from "../components/Header.vue";
 import Footer from "../components/Footer.vue";
 import { useRouter } from "vue-router";
 
 const router = useRouter();
 
-const goToFichaje = () => router.push("/fichaje");
-const goToVacaciones = () => router.push("/vacaciones");
-const goToNomina = () => router.push("/nomina");
-const goToContrato = () => router.push("/contrato");
+
+const fichaje = () => router.push("/fichaje");
+const vacacionesEmployee = () => router("/vacaciones-employee");
+const nominaE = () => router.push("/nomina-employee");
+const contratoE = () => router.push("/contrato-employee");
+
+const nombre = ref(localStorage.getItem("nombre"));
 </script>
 
 <template>
   <div class="dashboard">
-    <Header />
+    <Header :nombre="nombre" />
 
     <main class="dashboard-grid">
-      <div class="dashboard-item" @click="goToFichaje">
+
+      <div class="dashboard-item" @click="fichaje">
         <img src="../assets/fichaje.png" alt="Fichaje" />
         <span>Fichaje</span>
       </div>
-      <div class="dashboard-item" @click="goToVacaciones">
+      <div class="dashboard-item" @click="vacacionesEmployee">
         <img src="../assets/vacaciones.png" alt="Vacaciones" />
         <span>Vacaciones</span>
       </div>
-      <div class="dashboard-item" @click="goToNomina">
+      <div class="dashboard-item" @click="nominaE">
         <img src="../assets/nomina.png" alt="Nomina" />
         <span>Nòmina</span>
       </div>
-      <div class="dashboard-item" @click="goToContrato">
+      <div class="dashboard-item" @click="contratoE">
         <img src="../assets/contrato.png" alt="Contrato" />
         <span>Contrato</span>
       </div>

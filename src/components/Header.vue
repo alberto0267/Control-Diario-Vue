@@ -1,42 +1,25 @@
 <script setup>
 import "../styles/header.css";
-import { useRouter } from "vue-router";
 
-const router = useRouter();
+import { ref, onMounted } from "vue";
 
-const goToLobby = () => {
-  router.back();
-};
+const nombre = ref("");
 
-const toggleDropdown = () => {
-  const dropdown = document.querySelector(".dropdown-menu");
-  if (dropdown) {
-    dropdown.classList.toggle("show");
-  }
-};
-
-const logout = () => {
-  console.log("Cerrando sesión...");
-  router.push("/login");
-};
+onMounted(() => {
+  nombre.value = localStorage.getItem("nombre") || "";
+});
+const props = defineProps({
+  nombre: String,
+});
 </script>
 
 <template>
   <header class="dashboard-header">
-    <img
-      src="../assets/logo3d.png"
-      alt="Logo"
-      class="logo"
-      @click="goToLobby"
-    />
-    <div class="user-info" @click="toggleDropdown">
-      <span>Hola, Fulano</span>
-      <img src="../assets/googleIcon.png" alt="User" class="user-icon" />
-      <div class="dropdown-menu">
-        <p>Nombre: Fulano</p>
-        <p>Tienda: FPeuroformac</p>
-        <button @click.stop="logout">Cerrar sesión</button>
-      </div>
+
+    <img src="../assets/logo3d.png" alt="Logo" class="logo" />
+    <div class="user-info">
+      <span>Hola, {{ nombre ? `, ${nombre}` : "" }}</span>
+      <img src="../assets/avatar.png" alt="User" class="user-icon" />
     </div>
   </header>
 </template>

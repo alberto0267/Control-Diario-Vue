@@ -64,6 +64,62 @@ onUnmounted(() => {
   clearInterval(intervalosM);
   clearInterval(intervalosS);
 });
+
+const tipo = ref("");
+const entrada = "entrada";
+const salida = "salida";
+const descanso = "descanso";
+const user_id = parseInt(localStorage.getItem("user_id"));
+const token = localStorage.getItem("token");
+
+function enviarFichaje(e) {
+  // e.preventDefault();
+  tipo.value = e;
+  console.log("El tipo seleccionado es", tipo.value);
+
+  const horaActual = tiempo.value;
+  const fechaActual = new Date().toLocaleDateString("en-CA");
+
+  const datos = {
+    user_id: user_id,
+    tipo: tipo.value,
+    fecha: fechaActual,
+  };
+
+  if (tipo.value === "entrada") {
+    datos.hora_entrada = horaActual;
+  } else if (tipo.value === "salida") {
+    datos.hora_salida = horaActual;
+  } else {
+    datos.hora_descanso = horaActual;
+  }
+
+  fetch("http://localhost:8000/api/fichajes", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Accept: "application/json",
+      //Siempre que neseita token debo poner esto de abajo asi autentica api rest
+      Authorization: `Bearer ${token}`,
+    },
+    body: JSON.stringify(datos),
+  })
+    .then(async (response) => {
+      if (!response.ok) {
+        const errorData = await response.json();
+        console.error("Errores del backend:", errorData.errors);
+        throw new Error("Algo falló");
+      }
+      return response.json();
+    })
+    .then((data) => {
+      console.log("mensaje del servidor", data);
+      localStorage.setItem("token", data.access_token);
+    })
+    .catch((error) => {
+      console.error("error: ", error);
+    });
+}
 </script>
 <template>
   <div class="dashboard">
@@ -79,16 +135,28 @@ onUnmounted(() => {
 
       <div class="action-buttons buttonsTop">
         <button class="icon-button">
-          <img src="../assets/fichajeEntrada.png" alt="Entrada" />
+          <img
+            src="../assets/fichajeEntrada.png"
+            alt="Entrada"
+            @click="enviarFichaje(entrada)"
+          />
         </button>
         <button class="icon-button selected">
-          <img src="../assets/fichajeSalida.png" alt="Salida" />
+          <img
+            src="../assets/fichajeSalida.png"
+            alt="Salida"
+            @click="enviarFichaje(salida)"
+          />
         </button>
       </div>
 
       <div class="action-buttonsBottom">
         <button class="icon-button">
-          <img src="../assets/descanso.png" alt="Descanso" />
+          <img
+            src="../assets/descanso.png"
+            alt="Descanso"
+            @click="enviarFichaje(descanso)"
+          />
         </button>
       </div>
     </main>
